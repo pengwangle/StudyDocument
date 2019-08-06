@@ -21,7 +21,10 @@ vim /etc/sysconfig/network-scripts/ifcfg-eth0
 4.修改主机名
 
 ~~~
+linux:
 vim /etc/sysconfig/network
+windows:
+C:\Windows\System32\drivers\etc
 ~~~
 
 5.查看防火请状态
@@ -64,6 +67,11 @@ alternatives --config java
 ~~~
 
 ![1564934508312](Linux命令集合：.assets/1564934508312.png)
+
+~~~
+直接配置外部访问端口：
+/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
+~~~
 
 
 
