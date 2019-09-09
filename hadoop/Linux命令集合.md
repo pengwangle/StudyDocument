@@ -73,5 +73,22 @@ alternatives --config java
 /sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
 ~~~
 
+~~~
+虚拟机黑屏
+netsh winsock reset 
+~~~
+
+10.配置主机名
+
+~~~
+vim /etc/hosts
+如：
+127.0.0.1   localhost
+192.168.109.11 hadoop011
+192.168.109.12 hadoop012
+192.168.109.10 hadoop010
+
+~~~
+
 
 
